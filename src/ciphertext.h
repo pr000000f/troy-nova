@@ -127,11 +127,11 @@ namespace troy {
             return scale_;
         }
 
-        inline bool is_ntt_form() const noexcept {
+        __host__ __device__ inline bool is_ntt_form() const noexcept {
             return is_ntt_form_;
         }
 
-        inline bool& is_ntt_form() noexcept {
+        __host__ __device__ inline bool& is_ntt_form() noexcept {
             return is_ntt_form_;
         }
 
@@ -151,11 +151,11 @@ namespace troy {
             return seed_;
         }
 
-        inline bool contains_seed() const noexcept {
+        __host__ __device__ inline bool contains_seed() const noexcept {
             return seed_ != 0;
         }
 
-        inline bool on_device() const noexcept {
+        __host__ __device__ inline bool on_device() const noexcept {
             return data_.on_device();
         }
 
