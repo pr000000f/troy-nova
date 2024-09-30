@@ -143,11 +143,11 @@ namespace troy {
             return correction_factor_;
         }
 
-        inline uint64_t seed() const noexcept {
+        __host__ __device__ inline uint64_t seed() const noexcept {
             return seed_;
         }
 
-        inline uint64_t& seed() noexcept {
+        __host__ __device__ inline uint64_t& seed() noexcept {
             return seed_;
         }
 
