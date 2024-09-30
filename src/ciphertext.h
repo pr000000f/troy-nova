@@ -99,31 +99,31 @@ namespace troy {
             return like(other, other.polynomial_count(), fill_zeros, pool);
         }
 
-        inline const ParmsID& parms_id() const noexcept {
+        __host__ __device__ inline const ParmsID& parms_id() const noexcept {
             return parms_id_;
         }
 
-        inline ParmsID& parms_id() noexcept {
+        __host__ __device__  inline ParmsID& parms_id() noexcept {
             return parms_id_;
         }
 
-        inline size_t polynomial_count() const noexcept {
+        __host__ __device__ inline size_t polynomial_count() const noexcept {
             return polynomial_count_;
         }
 
-        inline size_t coeff_modulus_size() const noexcept {
+        __host__ __device__ inline size_t coeff_modulus_size() const noexcept {
             return coeff_modulus_size_;
         }
 
-        inline size_t poly_modulus_degree() const noexcept {
+        __host__ __device__ inline size_t poly_modulus_degree() const noexcept {
             return poly_modulus_degree_;
         }
 
-        inline double scale() const noexcept {
+        __host__ __device__ inline double scale() const noexcept {
             return scale_;
         }
 
-        inline double& scale() noexcept {
+        __host__ __device__ inline double& scale() noexcept {
             return scale_;
         }
 
